@@ -1,0 +1,12 @@
+[package]
+name = "rust2ch"
+version = "0.1.0"
+authors = ["zhukai <zhukai@apache.org>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clickhouse-rs = { git = "https://github.com/suharev7/clickhouse-rs", rev = "67c3bcb14751e05b83b3592fa9ee9f6ad2f408c6" }
+tokio = {version = "*", features = ["full"]}
+structopt = "0.3"
